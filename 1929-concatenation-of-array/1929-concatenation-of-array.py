@@ -1,13 +1,17 @@
 class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
         
+        ans = nums * 2
+        
+        return ans
+        
         # Optimised approach
         # O(n) time | O(n) space
  
-        for i in range(len(nums)):
-            nums.append(nums[i])
+#         for i in range(len(nums)):
+#             nums.append(nums[i])
     
-        return nums
+#         return nums
     
     
         # brute force
