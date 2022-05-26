@@ -2,22 +2,15 @@ class Solution:
     def finalValueAfterOperations(self, operations: List[str]) -> int:
         
         #maps = {"--X": -1, "X--": -1, "X++": 1, "++X": 1}
-        return sum('+' in s or -1 for s in operations)
+        #sum(1 if '+' in op else -1 for op in operations)
         
         
         
-        
-        
-        
-        # x = 0
-        # for i in operations:
-        #     if i == "--X":
-        #         x -= 1
-        #     elif i == "X--":
-        #         x -= 1
-        #     elif i == "++X":
-        #         x += 1
-        #     elif i == "X++":
-        #         x += 1
-        # return x
+        x = 0
+        for i in operations:
+            if "+" in i:
+                x += 1
+            else:
+                x -= 1
+        return x
         
