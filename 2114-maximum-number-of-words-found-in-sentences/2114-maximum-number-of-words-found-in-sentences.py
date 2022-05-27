@@ -1,6 +1,7 @@
 class Solution:
     def mostWordsFound(self, sentences: List[str]) -> int:
         
+    # Technique: Split string
     # Brute Force approach
     # O(n) time | O(1) space
     
