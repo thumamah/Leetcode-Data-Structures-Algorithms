@@ -11,7 +11,7 @@ class Solution:
             # add element from start(X elements)
             result.append(nums[i])
             # add element from the second half (Y elements)
-            result.append(nums[n+i]) 
+            result.append(nums[i+n]) 
             
                  
         return result 
