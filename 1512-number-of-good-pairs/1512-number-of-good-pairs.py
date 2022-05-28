@@ -1,15 +1,22 @@
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
         
+        # define a map
         hashMap = {}
         goodPairs = 0
         
+        #iterate over nums
         for i in nums:
+            # check if number is in map
             if i in hashMap:
+                # add the amount of times good pairs appears 
                 goodPairs += hashMap[i]
+                # increment the value of this key
                 hashMap[i] += 1 
             else:
+                # add this value to map
                 hashMap[i] = 1
+                
         return goodPairs
         
         
