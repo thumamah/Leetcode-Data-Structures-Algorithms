@@ -1,6 +1,9 @@
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
         
+    # Optimized approach
+    # O(n) time | O(1) space
+    
         # define a map
         hashMap = {}
         goodPairs = 0
