@@ -1,22 +1,16 @@
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
         
+    # Approach 1
+    # O(n) time | O(n) space
+    
         output = []
-        maxs = max(candies)
-        l = len(candies)
-        for i in range(l):
+        # iterate over candies
+        for i in range(len(candies)):
+            # check if current candy + extra candy is >= to all other candies
             if candies[i]+extraCandies >= max(candies):
                 output.append(True)
             else:
                 output.append(False)
         return output
-    
-    # l=len(candies)
-    #     ans=[]
-    #     for i in range(l):
-    #         if candies[i]+extraCandies >= max(candies):
-    #             ans.append(True)
-    #         else:
-    #             ans.append(False)
-    #     return ans
         
