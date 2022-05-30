@@ -7,7 +7,7 @@ class Solution:
         output = []
         # iterate over candies
         for i in range(len(candies)):
-            # check if current candy + extra candy is >= to all other candies
+            # check if current candy + extra candy is >= than all other candies
             if candies[i]+extraCandies >= max(candies):
                 output.append(True)
             else:
