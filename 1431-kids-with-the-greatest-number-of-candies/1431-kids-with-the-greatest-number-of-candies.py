@@ -8,11 +8,11 @@ class Solution:
     
         output = []
         # iterate over candies
-        for i in range(len(candies)):
+        for candy in range(len(candies)):
             # check if current candy + extra candy is >= than all other candies
-            if candies[i]+extraCandies >= max(candies):
+            if candies[candy]+extraCandies >= max(candies):
                 output.append(True)
             else:
                 output.append(False)
         return output
-        
+    
