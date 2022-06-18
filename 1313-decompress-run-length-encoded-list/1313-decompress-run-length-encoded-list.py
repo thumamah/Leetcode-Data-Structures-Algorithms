@@ -1,14 +1,23 @@
 class Solution:
     def decompressRLElist(self, nums: List[int]) -> List[int]:
+        output = []
+        for i in range(0,len(nums)-1,2):
+            freq = nums[i]
+            value = nums[i+1]
+            for j in range(freq):
+                output.append(value)
+                
+        return output
         
-        decompressed = []
+#         decompressed = []
         
-        for i in range(0, len(nums)-1, 2):
-            decompressed += nums[i] * [nums[i+1]]
-            print(nums[i] * [nums[i+1]])
-            print(decompressed)
+#         for i in range(0, len(nums)-1, 2):
+#             decompressed += nums[i] * [nums[i+1]]
+#             print(nums[i] * [nums[i+1]])
+#             print(decompressed)
     
-        return decompressed
+#         return decompressed
+        
         
 #         result = []
 #         maps = {}
